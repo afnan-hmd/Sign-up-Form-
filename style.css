@@ -28,6 +28,21 @@ body {
     object-position: left;
     z-index: 1;
 }
+.logo > div {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 20vh;
+}
+.logo > div > img {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
 
 .container {
     background-color: rgb(200, 200, 200);
