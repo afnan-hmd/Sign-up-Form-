@@ -6,7 +6,10 @@
     margin: 0;
     /* font-family:; */
 }
-  
+@font-face {
+    font-family: Norse;
+    src:url("assets/fonts/Norse-Bold.otf");
+}
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -16,6 +19,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
@@ -24,9 +28,11 @@ body {
 
     position: absolute;
     width: 25vw;
+    min-width: 300px;
     height: 100vh;
     object-position: left;
     z-index: 1;
+    color: white;
 }
 .logo > div {
     background-color: rgba(0, 0, 0, 0.6);
@@ -38,11 +44,27 @@ body {
 .logo > div > img {
     max-width: 90%;
     max-height: 90%;
-    position: absolute;
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
 }
+.logo-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo > div > p {
+    font-family: Norse;
+    font-size: 6rem;
+}
+.logo > p {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+}
+
 
 .container {
     background-color: rgb(200, 200, 200);
@@ -52,4 +74,28 @@ body {
     height: 100vh;
     object-position: right;
     left: 25%;
+    padding-top: 100px;
+}
+.container > p {
+    padding-left: 40px;
+    font-weight: 600;
+    width: 66ch;
+    font-size: 1.1rem;
+}
+.form-container {
+    padding-left: 40px;
+    background-color: rgb(169, 169, 169);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+input {
+    border: 0px;
+    border-radius: 2px;
+    box-shadow: none;
 }
