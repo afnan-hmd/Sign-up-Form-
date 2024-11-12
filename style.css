@@ -81,6 +81,7 @@ a {
     font-weight: 600;
     width: 66ch;
     font-size: 1.1rem;
+    padding-bottom: 30px;
 }
 .form-container {
     padding-left: 40px;
@@ -111,6 +112,9 @@ input {
     width: 30ch;
     font-size: 1rem;
     padding-left: 10px;
+}
+input ::invalid {
+    border-color: red;
 }
 label {
     display: block;
